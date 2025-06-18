@@ -33,14 +33,17 @@ A desktop calendar application built with Java Swing that allows users to view m
 ---
 
 ### 🏃 Option 1: Run the JAR
+Simply run the JAR file by doube-clicking it 
 
-```bash
+## OR
+Run using:
+```
 java -cp ".;sqlite-jdbc-3.41.2.1.jar" -jar CalendarApp.jar
 ````
 
 > 📝 On Linux/macOS, replace `;` with `:` in the classpath:
 
-```bash
+```
 java -cp ".:sqlite-jdbc-3.41.2.1.jar" -jar CalendarApp.jar
 ```
 
@@ -50,26 +53,26 @@ java -cp ".:sqlite-jdbc-3.41.2.1.jar" -jar CalendarApp.jar
 
 1. Compile:
 
-   ```bash
+   ```
    javac -cp ".;sqlite-jdbc-3.41.2.1.jar" CalendarApp.java
    ```
 
 2. Run:
 
-   ```bash
+   ```
    java -cp ".;sqlite-jdbc-3.41.2.1.jar" CalendarApp
    ```
 
 ---
 
 ## 🗂️ Project Structure
-
 ```
 .
-├── CalendarApp.java           # Main application file
-├── CalendarApp.jar            # Compiled executable (optional)
-├── calendar.db                # SQLite database (auto-created)
-├── sqlite-jdbc-3.41.2.1.jar   # SQLite JDBC driver (must be present)
+├── CalendarApp.java            # Source code (main class & GUI)
+├── CalendarApp.class           # Compiled class
+├── CalendarApp.jar             # Executable JAR
+├── sqlite-jdbc-3.41.2.1.jar    # JDBC driver (keep alongside the app)
+├── calendar.db                 # SQLite database (auto‑generated)
 └── README.md
 ```
 
